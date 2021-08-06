@@ -9,104 +9,130 @@
     <style>
         #calculator-body {
             display: grid;
-            grid-template: repeat(7, 1fr)/ repeat(6, 1fr);
+            grid-template: 20px repeat(min-content, 1fr) 20px/ 20px repeat(5, min-content) 20px;
+            gap: 2%;
+            background: radial-gradient(rgb(181, 255, 202), rgb(110, 195, 249));
+            padding: 5%;
+            margin: ;
+            justify-content: center;
+            width: min-content;
+            border-radius: 3%;
+        }
+
+        .opr-btn {
+            border-radius: 10%;
+            font-size: 1.25em;
+            width: 80%;
+            margin: 2% 0;
+        }
+
+        .green-btn {
+            background-color: rgb(76, 252, 126);
+        }
+
+        .blue-btn {
+            background-color: rgb(110, 195, 249);
+        }
+
+        .orange-btn {
+            background-color: rgb(254, 152, 62);
         }
 
         #entry-and-result {
-            grid-area: 1/2/2/6;
+            grid-area: 2/2/3/6;
         }
 
         .btn1 {
-            grid-area: 2/2/3/3;
-        }
-
-        .btn2 {
-            grid-area: 2/3/3/4;
-        }
-
-        .btn3 {
-            grid-area: 2/4/3/5;
-        }
-
-        .btn4 {
             grid-area: 3/2/4/3;
         }
 
-        .btn5 {
+        .btn2 {
             grid-area: 3/3/4/4;
         }
 
-        .btn6 {
+        .btn3 {
             grid-area: 3/4/4/5;
         }
 
-        .btn7 {
+        .btn4 {
             grid-area: 4/2/5/3;
         }
 
-        .btn8 {
+        .btn5 {
             grid-area: 4/3/5/4;
         }
 
-        .btn9 {
+        .btn6 {
             grid-area: 4/4/5/5;
         }
 
-        .btn0 {
-            grid-area: 5/3/6/4;
-        }
-
-        .btn-clr {
+        .btn7 {
             grid-area: 5/2/6/3;
         }
 
-        .btn-deci {
+        .btn8 {
+            grid-area: 5/3/6/4;
+        }
+
+        .btn9 {
             grid-area: 5/4/6/5;
         }
 
-        .btn-add {
-            grid-area: 2/5/3/6;
+        .btn0 {
+            grid-area: 6/3/7/4;
         }
 
-        .btn-subt {
+        .btn-clr {
+            grid-area: 6/2/7/3;
+        }
+
+        .btn-deci {
+            grid-area: 6/4/7/5;
+        }
+
+        .btn-add {
             grid-area: 3/5/4/6;
         }
 
-        .btn-mult {
+        .btn-subt {
             grid-area: 4/5/5/6;
         }
 
-        .btn-divi {
+        .btn-mult {
             grid-area: 5/5/6/6;
         }
 
+        .btn-divi {
+            grid-area: 6/5/7/6;
+        }
+
         .btn-eq {
-            grid-area: 6/3/7/5;
+            grid-area: 7/3/8/5;
+            background: radial-gradient(rgb(110, 195, 249), rgb(254, 192, 138));
         }
     </style>
 </head>
 
 <body>
     <section id="calculator-body">
-        <textarea name="entry-and-result" id="entry-and-result" cols="30" rows="10"></textarea>
-        <button class="btn1 opr-btn">1</button>
-        <button class="btn2 opr-btn">2</button>
-        <button class="btn3 opr-btn">3</button>
-        <button class="btn4 opr-btn">4</button>
-        <button class="btn5 opr-btn">5</button>
-        <button class="btn6 opr-btn">6</button>
-        <button class="btn7 opr-btn">7</button>
-        <button class="btn8 opr-btn">8</button>
-        <button class="btn9 opr-btn">9</button>
-        <button class="btn0 opr-btn">0</button>
-        <button class="btn-clr opr-btn">C</button>
-        <button class="btn-deci opr-btn">•</button>
-        <button class="btn-add opr-btn">+</button>
-        <button class="btn-subt opr-btn">-</button>
-        <button class="btn-mult opr-btn">x</button>
-        <button class="btn-divi opr-btn">÷</button>
+        <textarea name="entry-and-result" id="entry-and-result" cols="auto" rows="auto"></textarea>
+        <button class="btn1 green-btn opr-btn">1</button>
+        <button class="btn2 green-btn opr-btn">2</button>
+        <button class="btn3 green-btn opr-btn">3</button>
+        <button class="btn4 green-btn opr-btn">4</button>
+        <button class="btn5 green-btn opr-btn">5</button>
+        <button class="btn6 green-btn opr-btn">6</button>
+        <button class="btn7 green-btn opr-btn">7</button>
+        <button class="btn8 green-btn opr-btn">8</button>
+        <button class="btn9 green-btn opr-btn">9</button>
+        <button class="btn0 green-btn opr-btn">0</button>
+        <button class="btn-clr orange-btn opr-btn">C</button>
+        <button class="btn-deci orange-btn opr-btn">•</button>
+        <button class="btn-add blue-btn opr-btn">+</button>
+        <button class="btn-subt blue-btn opr-btn">-</button>
+        <button class="btn-mult blue-btn opr-btn">x</button>
+        <button class="btn-divi blue-btn opr-btn">÷</button>
         <button class="btn-eq opr-btn">=</button>
-
     </section>
 </body>
 
