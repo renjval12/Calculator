@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #calculator-body {
+            display: grid;
+            grid-template: repeat(7, 1fr)/ repeat(6, 1fr);
+        }
+
+        #entry-and-result {
+            grid-area: 1/2/2/6;
+        }
+
+        .btn1 {
+            grid-area: 2/2/3/3;
+        }
+
+        .btn2 {
+            grid-area: 2/3/3/4;
+        }
+
+        .btn3 {
+            grid-area: 2/4/3/5;
+        }
+
+        .btn4 {
+            grid-area: 3/2/4/3;
+        }
+
+        .btn5 {
+            grid-area: 3/3/4/4;
+        }
+
+        .btn6 {
+            grid-area: 3/4/4/5;
+        }
+
+        .btn7 {
+            grid-area: 4/2/5/3;
+        }
+
+        .btn8 {
+            grid-area: 4/3/5/4;
+        }
+
+        .btn9 {
+            grid-area: 4/4/5/5;
+        }
+
+        .btn0 {
+            grid-area: 5/3/6/4;
+        }
+
+        .btn-clr {
+            grid-area: 5/2/6/3;
+        }
+
+        .btn-deci {
+            grid-area: 5/4/6/5;
+        }
+
+        .btn-add {
+            grid-area: 2/5/3/6;
+        }
+
+        .btn-subt {
+            grid-area: 3/5/4/6;
+        }
+
+        .btn-mult {
+            grid-area: 4/5/5/6;
+        }
+
+        .btn-divi {
+            grid-area: 5/5/6/6;
+        }
+
+        .btn-eq {
+            grid-area: 6/3/7/5;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="calculator-body">
+        <textarea name="entry-and-result" id="entry-and-result" cols="30" rows="10"></textarea>
+        <button class="btn1 opr-btn">1</button>
+        <button class="btn2 opr-btn">2</button>
+        <button class="btn3 opr-btn">3</button>
+        <button class="btn4 opr-btn">4</button>
+        <button class="btn5 opr-btn">5</button>
+        <button class="btn6 opr-btn">6</button>
+        <button class="btn7 opr-btn">7</button>
+        <button class="btn8 opr-btn">8</button>
+        <button class="btn9 opr-btn">9</button>
+        <button class="btn0 opr-btn">0</button>
+        <button class="btn-clr opr-btn">C</button>
+        <button class="btn-deci opr-btn">•</button>
+        <button class="btn-add opr-btn">+</button>
+        <button class="btn-subt opr-btn">-</button>
+        <button class="btn-mult opr-btn">x</button>
+        <button class="btn-divi opr-btn">÷</button>
+        <button class="btn-eq opr-btn">=</button>
+
+    </section>
+</body>
+
+</html>
